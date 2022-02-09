@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header class="header" id="name">
+        <div class="logo">
+            <a href="../index.html" class="linkLogo">
+                <h1>
+                    utn
+                </h1>
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="menuPrincipal">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="./noticias.html">Noticias</a>
+            </li>
+            <li>
+                <a href="./masNoticias.html">Más Noticas</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <section id="portada">
+            <h2>Contactanos</h2>
+            <form action="" method="post" id="formContact" enctype="multipart/form">
+                <div>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="nombre" placeholder="Correo electrónico" required>     
+                </div>
+                <div>
+                    <label for="tel">Teléfono: </label>
+                    <input type="tel" name="tel" placeholder="Teléfono de contacto">     
+                </div>
+                <div>
+                    <label for="state">Provincia: </label>
+                    <select name="" id="">
+                        <option disabled></option>
+                        <option>Seleccione su provincia</option>
+                        <option value="CABA">CABA</option>
+                        <option value="GBA">GBA</option>
+                        <option value="Interior del país">Interior del país</option>
+                    </select>          
+                </div>
+                <div>
+                    <label for="comments" id="comments">Comentarios: </label>
+                    <textarea name="comments" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <label for="">
+                    <input type="checkbox">
+                    Quiero recibir información
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2022 ::::: Derechos Reservados 
+        </p>
+        <p>Desarrolado por <a href="https://www.mendozapost.com/" target="_blank">Mi Empresa</a> </p>
+        <p>Enviame un <a href="mailto:bernalpas@gmail.com">Mail</a></p>
+    </footer>
+
+
+    
+</body>
+</html>
