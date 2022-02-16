@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "arial";
+    box-sizing: border-box;
+}
+
+.header{
+    background: #fff;
+    color: rgb(87, 49, 175);
+    padding: 0.5em 3em;
+    display: flex;
+    justify-content: space-between;
+}
+a {        text-decoration: none;
+}
+
+.logo{
+    width: 30%;
+    align-self: auto;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    padding: 1em;
+}
+
+.banner-top{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contenedor img{
+    width: 100%;
+}
+
+.primero{
+    background: rgb(207,0 , 15);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.segundo{
+    background: rgb(34,167, 240);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.tercero{
+    background: rgb(38,166, 91);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.footer{
+    box-sizing: border-box;
+    margin-top: 4em;
+    border-top: 5px solid white;
+    padding: 1em;
+    background: rgb(82, 15, 15);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.data{
+    background:rgb(255, 255, 255);
+    margin: 2em;
+    padding: 1.5em;
+    color: black;
+    border-radius: 15px;
+    height: 100%;
+    
+
+}
+.data ul li {list-style-type: none}
+
+.map{
+    width: 60%;
+
+}
+
+@media screen and (min-width: 990px) and (max-width:1200px){
+    body{
+        background-color: black;
+}
+
+}
+
+@media screen and (min-width: 464px) and (max-width:653px){
+
+    img {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+    header{
+    flex-flow: column wrap; 
+    align-items: center;
+}
+header h1{text-align: center}
+}
+
+@media screen and (max-width: 464px){
+    body {
+        background-color: black;
+    }
+    header{
+        display: flex;
+        flex-flow: row wrap; 
+    }
+    header div.logo {
+        text-align: center;
+        align-items: center;
+
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    aside a { 
+        display: none;
+    }
+}
+
+

@@ -2,43 +2,46 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 
 body{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-/* LOGO UTN */
-.logo{
-    background-color: rgb(35, 35, 85);
+
+/* #name{
+    background-color: rgb(52, 212, 52);
+}
+
+header{
+    background-color: rgb(199, 62, 126);
+}  */
+
+.header{
+    background-color: rgb(110, 110, 236);
     color: white;
-    height: 85px;
+    height: 80px;
     width: 85vw;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.logo h1{
+.logo{
     text-transform: uppercase;
-    padding: 0.5rem;
 }
 
 .logo a{
     color: white;
     text-decoration: none;
-
-}
-.logo a:hover, .navbar ul li a:hover{
-    color:rgb(236, 222, 222)
 }
 
-/* MENU DE NAVEGACION */
 .navbar{
     background: rgb(177, 186, 224);
     color: white;
     width: 85vw;
-    height: auto;
+    height: 70px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,17 +52,19 @@ body{
 
 .navbar ul li{
     display: inline-block;
-
 }
 
 .navbar ul li a{
     text-decoration: none;
     display: block;
     padding: 25px;
-    color: white;   
+    color: white;    
 }
 
-/* MAIN */
+.navbar ul li a:hover{
+    color: blue;
+}
+
 #mainContent{
     width: 85vw;
     margin-left: auto;
@@ -91,38 +96,54 @@ body{
 
 .imgNota img{
     width: 100%;
-
-}  
-/* PAGINA DE CONTACTO */
-#formContact {
-    padding: 5rem;
-    background: rgba(195, 195, 209, 0.582);
-    border-radius: 4%;
-    margin: 1.5rem 0;
 }
 
-#formContact input, #formContact select, #formContact textarea {
+
+/* Estilos de la Página de Contacto */
+#formContacto{
+    padding: 1em;
+    background: rgb(133, 139, 133);
+    border-radius: 15px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#formContacto input,
+#formContacto select,
+#formContacto textarea{
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.6em;
+    margin-bottom: 1em;
     box-sizing: border-box;
-    border-radius: 3px;
-
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#formContact input[type="submit"] {
+
+#formContacto input[type="submit"]:hover{
+    background: blue;
+    color: white;
+}
+
+#formContacto input[type="submit"]{
     width: 50%;
-    margin: 1rem auto;
-    
+}
 
+#formContacto input:focus{
+    background: rgb(218, 216, 216);
 }
-#formContact input:focus{
-    border-color: rgb(114, 86, 165);
-    border-width: 3px;
+
+#formContacto input:invalid{
+    border: 3px solid red;
 }
-#formContact input:invalid{}
-/* FOOTER */
+
+#formContacto input:valid{
+    border: 3px solid green;
+}
+
+
 footer{
     clear: both;
-    background: rgba(135, 145, 187, 0.863);
+    background-color: rgb(145, 145, 245);
     color: white;
     text-align: center;
     padding: 15px;
