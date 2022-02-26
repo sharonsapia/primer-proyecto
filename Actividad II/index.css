@@ -1,0 +1,27 @@
+h1{
+    font-style: bold;
+    font-family: verdana, arial, helvetica;
+    font-size: large;
+    background-color: #774d4d;
+    color: white;
+}
+
+h1, h2, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+h2{color: white;}
+
+button {
+    margin: 5rem auto;
+    padding: 1rem;
+    color: #774d4d;
+    background-color: rgba(83, 33, 9, 0);
+}
+
